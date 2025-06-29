@@ -267,6 +267,32 @@ if(currencyfrom === 'btc'){
       calculationPrice = `Sorry for this moment`
   }
 
+ } else if (currencyfrom === 'sol'){
+ if(currencyfrom === 'sol' && currencyto ==='trx'){
+      calculationPrice = `Your ${amountNumber} TRX = ${amountNumber * oneSolToTrx} TRX`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'sol' && currencyto ==='usd'){
+      calculationPrice = `Your ${amountNumber} SOL = ${amountNumber * oneSolToUsd} USD`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'sol' && currencyto ==='bnb'){
+      calculationPrice = `Your ${amountNumber} SOL = ${amountNumber * oneSolToBnb} BNB`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'sol' && currencyto ==='ltc'){
+      calculationPrice = `Your ${amount} SOL = ${amount * oneSolToLtc} LTC`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'sol' && currencyto ==='eth'){
+      calculationPrice = `Your ${amount} SOL = ${amount * oneSolToEth} ETH`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'sol' && currencyto ==='btc'){
+      calculationPrice = `Your ${amount} SOL = ${amount * oneSolToBtc} BTC`
+      console.log(calculationPrice)
+  } else if(currencyfrom === 'sol' && currencyto ==='trx'){
+      calculationPrice = ` 🚫🚫 SOL to SOL pair not accepted 🚫🚫`
+      console.log(calculationPrice)
+  } else{
+      calculationPrice = `Sorry for this moment`
+  }
+
  } 
 
 
