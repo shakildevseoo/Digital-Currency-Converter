@@ -212,6 +212,33 @@ if(currencyfrom === 'btc'){
       calculationPrice = `Sorry for this moment`
   }
 
+  //USD pair
+ } else if (currencyfrom === 'usd'){
+ if(currencyfrom === 'usd' && currencyto ==='sol'){
+      calculationPrice = `Your ${amountNumber} USD = ${amountNumber * oneUsdToSol} SOL`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'usd' && currencyto ==='trx'){
+      calculationPrice = `Your ${amountNumber} USD = ${amountNumber * oneUsdToTrx} TRX`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'usd' && currencyto ==='bnb'){
+      calculationPrice = `Your ${amountNumber} USD = ${amountNumber * oneUsdToBnb} USD`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'usd' && currencyto ==='ltc'){
+      calculationPrice = `Your ${amount} USD = ${amount * oneUsdToLtc} LTC`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'usd' && currencyto ==='eth'){
+      calculationPrice = `Your ${amount} USD = ${amount * oneUsdToEth} ETH`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'usd' && currencyto ==='btc'){
+      calculationPrice = `Your ${amount} USD = ${amount * oneUsdToBtc} BTC`
+      console.log(calculationPrice)
+  } else if(currencyfrom === 'usd' && currencyto ==='usd'){
+      calculationPrice = ` 🚫🚫 USD to USD pair not accepted 🚫🚫`
+      console.log(calculationPrice)
+  } else{
+      calculationPrice = `Sorry for this moment`
+  }
+
  } 
 
 
