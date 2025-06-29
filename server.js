@@ -221,7 +221,7 @@ if(currencyfrom === 'btc'){
       calculationPrice = `Your ${amountNumber} USD = ${amountNumber * oneUsdToTrx} TRX`
       console.log(calculationPrice)
   }else if(currencyfrom === 'usd' && currencyto ==='bnb'){
-      calculationPrice = `Your ${amountNumber} USD = ${amountNumber * oneUsdToBnb} USD`
+      calculationPrice = `Your ${amountNumber} USD = ${amountNumber * oneUsdToBnb} BNB`
       console.log(calculationPrice)
   }else if(currencyfrom === 'usd' && currencyto ==='ltc'){
       calculationPrice = `Your ${amount} USD = ${amount * oneUsdToLtc} LTC`
@@ -234,6 +234,34 @@ if(currencyfrom === 'btc'){
       console.log(calculationPrice)
   } else if(currencyfrom === 'usd' && currencyto ==='usd'){
       calculationPrice = ` 🚫🚫 USD to USD pair not accepted 🚫🚫`
+      console.log(calculationPrice)
+  } else{
+      calculationPrice = `Sorry for this moment`
+  }
+
+
+  // TRx Pair
+ } else if (currencyfrom === 'trx'){
+ if(currencyfrom === 'trx' && currencyto ==='sol'){
+      calculationPrice = `Your ${amountNumber} TRX = ${amountNumber * oneTrxToSol} SOL`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'trx' && currencyto ==='usd'){
+      calculationPrice = `Your ${amountNumber} TRX = ${amountNumber * oneTrxToUsd} USD`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'trx' && currencyto ==='bnb'){
+      calculationPrice = `Your ${amountNumber} TRX = ${amountNumber * oneTrxToBnb} BNB`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'trx' && currencyto ==='ltc'){
+      calculationPrice = `Your ${amount} TRX = ${amount * oneTrxToLtc} LTC`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'trx' && currencyto ==='eth'){
+      calculationPrice = `Your ${amount} TRX = ${amount * oneTrxToEth} ETH`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'trx' && currencyto ==='btc'){
+      calculationPrice = `Your ${amount} TRX = ${amount * oneTrxToBtc} BTC`
+      console.log(calculationPrice)
+  } else if(currencyfrom === 'trx' && currencyto ==='trx'){
+      calculationPrice = ` 🚫🚫 TRX to TRX pair not accepted 🚫🚫`
       console.log(calculationPrice)
   } else{
       calculationPrice = `Sorry for this moment`
