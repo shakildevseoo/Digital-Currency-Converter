@@ -156,7 +156,35 @@ if(currencyfrom === 'btc'){
   } else{
       calculationPrice = `Sorry for this moment`
   }
- } 
+
+
+  // Ltc Pair
+ } else if (currencyfrom === 'ltc'){
+ if(currencyfrom === 'ltc' && currencyto ==='sol'){
+      calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneLtcToSol} SOL`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'ltc' && currencyto ==='trx'){
+      calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneLtcToTrx} TRX`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'ltc' && currencyto ==='usd'){
+      calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneLtcToUsd} USD`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'ltc' && currencyto ==='bnb'){
+      calculationPrice = `Your ${amount} LTC = ${amount * oneLtcToBnb} BNB`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'ltc' && currencyto ==='eth'){
+      calculationPrice = `Your ${amount} LTC = ${amount * oneLtcToEth} ETH`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'ltc' && currencyto ==='btc'){
+      calculationPrice = `Your ${amount} LTC = ${amount * oneLtcToBtc} BTC`
+      console.log(calculationPrice)
+  } else if(currencyfrom === 'ltc' && currencyto ==='ltc'){
+      calculationPrice = ` 🚫🚫 LTC to LTC pair not accepted 🚫🚫`
+      console.log(calculationPrice)
+  } else{
+      calculationPrice = `Sorry for this moment`
+  }
+ }
 
 
 
