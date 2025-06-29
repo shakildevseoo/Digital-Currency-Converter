@@ -188,22 +188,22 @@ if(currencyfrom === 'btc'){
 //BNB pair
  } else if (currencyfrom === 'bnb'){
  if(currencyfrom === 'bnb' && currencyto ==='sol'){
-      calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneBnbToSol} SOL`
+      calculationPrice = `Your ${amountNumber} BNB = ${amountNumber * oneBnbToSol} SOL`
       console.log(calculationPrice)
   }else if(currencyfrom === 'bnb' && currencyto ==='trx'){
-      calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneBnbToTrx} TRX`
+      calculationPrice = `Your ${amountNumber} BNB = ${amountNumber * oneBnbToTrx} TRX`
       console.log(calculationPrice)
   }else if(currencyfrom === 'bnb' && currencyto ==='usd'){
-      calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneBnbToUsd} USD`
+      calculationPrice = `Your ${amountNumber} BNB = ${amountNumber * oneBnbToUsd} USD`
       console.log(calculationPrice)
   }else if(currencyfrom === 'bnb' && currencyto ==='bnb'){
-      calculationPrice = `Your ${amount} LTC = ${amount * oneBnbToBnb} BNB`
+      calculationPrice = `Your ${amount} BNB = ${amount * oneBnbToBnb} BNB`
       console.log(calculationPrice)
   }else if(currencyfrom === 'bnb' && currencyto ==='eth'){
-      calculationPrice = `Your ${amount} LTC = ${amount * oneBnbToEth} ETH`
+      calculationPrice = `Your ${amount} BNB = ${amount * oneBnbToEth} ETH`
       console.log(calculationPrice)
   }else if(currencyfrom === 'bnb' && currencyto ==='btc'){
-      calculationPrice = `Your ${amount} LTC = ${amount * oneBnbToBtc} BTC`
+      calculationPrice = `Your ${amount} BNB = ${amount * oneBnbToBtc} BTC`
       console.log(calculationPrice)
   } else if(currencyfrom === 'bnb' && currencyto ==='bnb'){
       calculationPrice = ` 🚫🚫 BNB to BNB pair not accepted 🚫🚫`
@@ -211,6 +211,8 @@ if(currencyfrom === 'btc'){
   } else{
       calculationPrice = `Sorry for this moment`
   }
+
+
  }
 
 
