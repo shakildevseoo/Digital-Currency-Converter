@@ -97,7 +97,58 @@ app.get('/', (req, res)=>{
 
 // collecting data & response
 app.post('/currency-converter', (req, res)=>{
+      // data destructuring 
+   const { amount, currencyfrom, currencyto} = req.body
+   let amountNumber = Number(amount)
+   console.log(amountNumber)
+
+   // BTC Pair 
+
+if(currencyfrom === 'btc'){
+   if(currencyfrom === 'btc' && currencyto ==='sol'){
+      calculationPrice = `Your ${amountNumber} BTC = ${amountNumber * oneBtcToSol} SOL`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'btc' && currencyto ==='trx'){
+      calculationPrice = `Your ${amountNumber} BTC = ${amountNumber * oneBtcToTrx} TRX`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'btc' && currencyto ==='usd'){
+      calculationPrice = `Your ${amountNumber} BTC = ${amountNumber * oneBtcToUsd} USD`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'btc' && currencyto ==='bnb'){
+      calculationPrice = `Your ${amount} BTC = ${amount * oneBtcToBnb} BNB`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'btc' && currencyto ==='ltc'){
+      calculationPrice = `Your ${amount} BTC = ${amount * oneBtcToLtc} LTC`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'btc' && currencyto ==='eth'){
+      calculationPrice = `Your ${amount} BTC = ${amount * oneBtcToEth} ETH`
+      console.log(calculationPrice)
+  } else if(currencyfrom === 'btc' && currencyto ==='btc'){
+      calculationPrice = ` 🚫🚫 BTC to BTC pair not accepted 🚫🚫}`
+      console.log(calculationPrice)
+  } else{
+      calculationPrice = `Sorry for this moment`
+  }
+
  
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
 
 
