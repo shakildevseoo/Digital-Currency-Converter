@@ -100,32 +100,32 @@ app.post('/currency-converter', (req, res)=>{
       // data destructuring 
    const { amount, currencyfrom, currencyto} = req.body
    let amountNumber = Number(amount)
-   console.log(amountNumber)
+  
 
    // BTC Pair 
 
 if(currencyfrom === 'btc'){
    if(currencyfrom === 'btc' && currencyto ==='sol'){
       calculationPrice = `Your ${amountNumber} BTC = ${amountNumber * oneBtcToSol} SOL`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'btc' && currencyto ==='trx'){
       calculationPrice = `Your ${amountNumber} BTC = ${amountNumber * oneBtcToTrx} TRX`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'btc' && currencyto ==='usd'){
       calculationPrice = `Your ${amountNumber} BTC = ${amountNumber * oneBtcToUsd} USD`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'btc' && currencyto ==='bnb'){
       calculationPrice = `Your ${amount} BTC = ${amount * oneBtcToBnb} BNB`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'btc' && currencyto ==='ltc'){
       calculationPrice = `Your ${amount} BTC = ${amount * oneBtcToLtc} LTC`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'btc' && currencyto ==='eth'){
       calculationPrice = `Your ${amount} BTC = ${amount * oneBtcToEth} ETH`
-      console.log(calculationPrice)
+     
   } else if(currencyfrom === 'btc' && currencyto ==='btc'){
       calculationPrice = ` 🚫🚫 BTC to BTC pair not accepted 🚫🚫}`
-      console.log(calculationPrice)
+    
   } else{
       calculationPrice = `Sorry for this moment`
   }
@@ -134,25 +134,25 @@ if(currencyfrom === 'btc'){
  } else if (currencyfrom === 'eth'){
   if(currencyfrom === 'eth' && currencyto ==='sol'){
       calculationPrice = `Your ${amountNumber} ETH = ${amountNumber * oneEthToSol} SOL`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'eth' && currencyto ==='trx'){
       calculationPrice = `Your ${amountNumber} ETH = ${amountNumber * oneEthToTrx} TRX`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'eth' && currencyto ==='usd'){
       calculationPrice = `Your ${amountNumber} ETH = ${amountNumber * oneEthToUsd} USD`
-      console.log(calculationPrice)
+    
   }else if(currencyfrom === 'eth' && currencyto ==='bnb'){
       calculationPrice = `Your ${amount} ETH = ${amount * oneEthToBnb} BNB`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'eth' && currencyto ==='ltc'){
       calculationPrice = `Your ${amount} ETH = ${amount * oneEthToLtc} LTC`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'eth' && currencyto ==='btc'){
       calculationPrice = `Your ${amount} ETH = ${amount * oneEthToBtc} BTC`
-      console.log(calculationPrice)
+     
   } else if(currencyfrom === 'eth' && currencyto ==='eth'){
       calculationPrice = ` 🚫🚫 ETH to ETH pair not accepted 🚫🚫`
-      console.log(calculationPrice)
+      
   } else{
       calculationPrice = `Sorry for this moment`
   }
@@ -162,25 +162,25 @@ if(currencyfrom === 'btc'){
  } else if (currencyfrom === 'ltc'){
  if(currencyfrom === 'ltc' && currencyto ==='sol'){
       calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneLtcToSol} SOL`
-      console.log(calculationPrice)
+    
   }else if(currencyfrom === 'ltc' && currencyto ==='trx'){
       calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneLtcToTrx} TRX`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'ltc' && currencyto ==='usd'){
       calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneLtcToUsd} USD`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'ltc' && currencyto ==='bnb'){
       calculationPrice = `Your ${amount} LTC = ${amount * oneLtcToBnb} BNB`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'ltc' && currencyto ==='eth'){
       calculationPrice = `Your ${amount} LTC = ${amount * oneLtcToEth} ETH`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'ltc' && currencyto ==='btc'){
       calculationPrice = `Your ${amount} LTC = ${amount * oneLtcToBtc} BTC`
-      console.log(calculationPrice)
+      
   } else if(currencyfrom === 'ltc' && currencyto ==='ltc'){
       calculationPrice = ` 🚫🚫 LTC to LTC pair not accepted 🚫🚫`
-      console.log(calculationPrice)
+     
   } else{
       calculationPrice = `Sorry for this moment`
   }
@@ -189,25 +189,25 @@ if(currencyfrom === 'btc'){
  } else if (currencyfrom === 'bnb'){
  if(currencyfrom === 'bnb' && currencyto ==='sol'){
       calculationPrice = `Your ${amountNumber} BNB = ${amountNumber * oneBnbToSol} SOL`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'bnb' && currencyto ==='trx'){
       calculationPrice = `Your ${amountNumber} BNB = ${amountNumber * oneBnbToTrx} TRX`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'bnb' && currencyto ==='usd'){
       calculationPrice = `Your ${amountNumber} BNB = ${amountNumber * oneBnbToUsd} USD`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'bnb' && currencyto ==='ltc'){
       calculationPrice = `Your ${amount} BNB = ${amount * oneBnbToLtc} LTC`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'bnb' && currencyto ==='eth'){
       calculationPrice = `Your ${amount} BNB = ${amount * oneBnbToEth} ETH`
-      console.log(calculationPrice)
+    
   }else if(currencyfrom === 'bnb' && currencyto ==='btc'){
       calculationPrice = `Your ${amount} BNB = ${amount * oneBnbToBtc} BTC`
-      console.log(calculationPrice)
+      
   } else if(currencyfrom === 'bnb' && currencyto ==='bnb'){
       calculationPrice = ` 🚫🚫 BNB to BNB pair not accepted 🚫🚫`
-      console.log(calculationPrice)
+      
   } else{
       calculationPrice = `Sorry for this moment`
   }
@@ -216,89 +216,97 @@ if(currencyfrom === 'btc'){
  } else if (currencyfrom === 'usd'){
  if(currencyfrom === 'usd' && currencyto ==='sol'){
       calculationPrice = `Your ${amountNumber} USD = ${amountNumber * oneUsdToSol} SOL`
-      console.log(calculationPrice)
+   
   }else if(currencyfrom === 'usd' && currencyto ==='trx'){
       calculationPrice = `Your ${amountNumber} USD = ${amountNumber * oneUsdToTrx} TRX`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'usd' && currencyto ==='bnb'){
       calculationPrice = `Your ${amountNumber} USD = ${amountNumber * oneUsdToBnb} BNB`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'usd' && currencyto ==='ltc'){
       calculationPrice = `Your ${amount} USD = ${amount * oneUsdToLtc} LTC`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'usd' && currencyto ==='eth'){
       calculationPrice = `Your ${amount} USD = ${amount * oneUsdToEth} ETH`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'usd' && currencyto ==='btc'){
       calculationPrice = `Your ${amount} USD = ${amount * oneUsdToBtc} BTC`
-      console.log(calculationPrice)
+      
   } else if(currencyfrom === 'usd' && currencyto ==='usd'){
       calculationPrice = ` 🚫🚫 USD to USD pair not accepted 🚫🚫`
-      console.log(calculationPrice)
+     
   } else{
       calculationPrice = `Sorry for this moment`
   }
 
 
-  // TRx Pair
+  // TRX Pair
  } else if (currencyfrom === 'trx'){
  if(currencyfrom === 'trx' && currencyto ==='sol'){
       calculationPrice = `Your ${amountNumber} TRX = ${amountNumber * oneTrxToSol} SOL`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'trx' && currencyto ==='usd'){
       calculationPrice = `Your ${amountNumber} TRX = ${amountNumber * oneTrxToUsd} USD`
-      console.log(calculationPrice)
+      
   }else if(currencyfrom === 'trx' && currencyto ==='bnb'){
       calculationPrice = `Your ${amountNumber} TRX = ${amountNumber * oneTrxToBnb} BNB`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'trx' && currencyto ==='ltc'){
       calculationPrice = `Your ${amount} TRX = ${amount * oneTrxToLtc} LTC`
-      console.log(calculationPrice)
+    
   }else if(currencyfrom === 'trx' && currencyto ==='eth'){
       calculationPrice = `Your ${amount} TRX = ${amount * oneTrxToEth} ETH`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'trx' && currencyto ==='btc'){
       calculationPrice = `Your ${amount} TRX = ${amount * oneTrxToBtc} BTC`
-      console.log(calculationPrice)
+    
   } else if(currencyfrom === 'trx' && currencyto ==='trx'){
       calculationPrice = ` 🚫🚫 TRX to TRX pair not accepted 🚫🚫`
-      console.log(calculationPrice)
+  
   } else{
       calculationPrice = `Sorry for this moment`
   }
-
+//SOl Pair
  } else if (currencyfrom === 'sol'){
  if(currencyfrom === 'sol' && currencyto ==='trx'){
       calculationPrice = `Your ${amountNumber} TRX = ${amountNumber * oneSolToTrx} TRX`
-      console.log(calculationPrice)
+    
   }else if(currencyfrom === 'sol' && currencyto ==='usd'){
-      calculationPrice = `Your ${amountNumber} SOL = ${amountNumber * oneSolToUsd} USD`
-      console.log(calculationPrice)
+      calculationPrice = `Your ${amountNumber} SOL = ${amountNumber * oneSolToUsdt} USD`
+     
   }else if(currencyfrom === 'sol' && currencyto ==='bnb'){
       calculationPrice = `Your ${amountNumber} SOL = ${amountNumber * oneSolToBnb} BNB`
       console.log(calculationPrice)
   }else if(currencyfrom === 'sol' && currencyto ==='ltc'){
       calculationPrice = `Your ${amount} SOL = ${amount * oneSolToLtc} LTC`
-      console.log(calculationPrice)
+     
   }else if(currencyfrom === 'sol' && currencyto ==='eth'){
       calculationPrice = `Your ${amount} SOL = ${amount * oneSolToEth} ETH`
-      console.log(calculationPrice)
+    
   }else if(currencyfrom === 'sol' && currencyto ==='btc'){
       calculationPrice = `Your ${amount} SOL = ${amount * oneSolToBtc} BTC`
-      console.log(calculationPrice)
+     
   } else if(currencyfrom === 'sol' && currencyto ==='trx'){
       calculationPrice = ` 🚫🚫 SOL to SOL pair not accepted 🚫🚫`
-      console.log(calculationPrice)
+     
   } else{
       calculationPrice = `Sorry for this moment`
   }
 
- } 
+ } else{
+    calculationPrice =' Unexpected Value Pairs'
+ }
 
 
 
 
+  res.status(200).json({
+    amount : amount,
+    From : currencyfrom,
+    To: currencyto,
+    price : calculationPrice
 
+  })
 
 
 
