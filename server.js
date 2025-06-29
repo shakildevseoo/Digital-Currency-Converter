@@ -130,8 +130,33 @@ if(currencyfrom === 'btc'){
       calculationPrice = `Sorry for this moment`
   }
 
- 
- }
+ // ETH Pair
+ } else if (currencyfrom === 'eth'){
+  if(currencyfrom === 'eth' && currencyto ==='sol'){
+      calculationPrice = `Your ${amountNumber} ETH = ${amountNumber * oneEthToSol} SOL`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'eth' && currencyto ==='trx'){
+      calculationPrice = `Your ${amountNumber} ETH = ${amountNumber * oneEthToTrx} TRX`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'eth' && currencyto ==='usd'){
+      calculationPrice = `Your ${amountNumber} ETH = ${amountNumber * oneEthToUsd} USD`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'eth' && currencyto ==='bnb'){
+      calculationPrice = `Your ${amount} ETH = ${amount * oneEthToBnb} BNB`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'eth' && currencyto ==='ltc'){
+      calculationPrice = `Your ${amount} ETH = ${amount * oneEthToLtc} LTC`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'eth' && currencyto ==='btc'){
+      calculationPrice = `Your ${amount} ETH = ${amount * oneEthToBtc} BTC`
+      console.log(calculationPrice)
+  } else if(currencyfrom === 'eth' && currencyto ==='eth'){
+      calculationPrice = ` 🚫🚫 ETH to ETH pair not accepted 🚫🚫`
+      console.log(calculationPrice)
+  } else{
+      calculationPrice = `Sorry for this moment`
+  }
+ } 
 
 
 
