@@ -184,6 +184,33 @@ if(currencyfrom === 'btc'){
   } else{
       calculationPrice = `Sorry for this moment`
   }
+
+//BNB pair
+ } else if (currencyfrom === 'bnb'){
+ if(currencyfrom === 'bnb' && currencyto ==='sol'){
+      calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneBnbToSol} SOL`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'bnb' && currencyto ==='trx'){
+      calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneBnbToTrx} TRX`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'bnb' && currencyto ==='usd'){
+      calculationPrice = `Your ${amountNumber} LTC = ${amountNumber * oneBnbToUsd} USD`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'bnb' && currencyto ==='bnb'){
+      calculationPrice = `Your ${amount} LTC = ${amount * oneBnbToBnb} BNB`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'bnb' && currencyto ==='eth'){
+      calculationPrice = `Your ${amount} LTC = ${amount * oneBnbToEth} ETH`
+      console.log(calculationPrice)
+  }else if(currencyfrom === 'bnb' && currencyto ==='btc'){
+      calculationPrice = `Your ${amount} LTC = ${amount * oneBnbToBtc} BTC`
+      console.log(calculationPrice)
+  } else if(currencyfrom === 'bnb' && currencyto ==='bnb'){
+      calculationPrice = ` 🚫🚫 BNB to BNB pair not accepted 🚫🚫`
+      console.log(calculationPrice)
+  } else{
+      calculationPrice = `Sorry for this moment`
+  }
  }
 
 
