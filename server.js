@@ -196,8 +196,8 @@ if(currencyfrom === 'btc'){
   }else if(currencyfrom === 'bnb' && currencyto ==='usd'){
       calculationPrice = `Your ${amountNumber} BNB = ${amountNumber * oneBnbToUsd} USD`
       console.log(calculationPrice)
-  }else if(currencyfrom === 'bnb' && currencyto ==='bnb'){
-      calculationPrice = `Your ${amount} BNB = ${amount * oneBnbToBnb} BNB`
+  }else if(currencyfrom === 'bnb' && currencyto ==='ltc'){
+      calculationPrice = `Your ${amount} BNB = ${amount * oneBnbToLtc} LTC`
       console.log(calculationPrice)
   }else if(currencyfrom === 'bnb' && currencyto ==='eth'){
       calculationPrice = `Your ${amount} BNB = ${amount * oneBnbToEth} ETH`
@@ -212,11 +212,7 @@ if(currencyfrom === 'btc'){
       calculationPrice = `Sorry for this moment`
   }
 
-
- }
-
-
-
+ } 
 
 
 
