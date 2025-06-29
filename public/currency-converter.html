@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+      <div class="d1">
+        <div class="d1_child">
+           <h1>Live Currency Converter</h1>
+           <h2>Check live foreign currency exchange rates</h2></h1>
+        </div>
+      </div>
+
+
+      <form action="/currency-converter" method="POST">
+         
+
+        <div class="d-flex">
+        <div class="amount">
+        <label for="">Amount</label>
+          <input type="text" placeholder="Enter Your Amount" name="amount">
+        </div>
+
+        <div class="from">
+          <label for=""currencyfrom>From</label>
+         <input list="currencyfrom" id="icurrencyfrom" name="currencyfrom" placeholder="Choice Currency"/>
+           <datalist id="currencyfrom">
+          <option> Choice Crypto Currency</option>
+           <option value="btc">BTC - Bitcoin</option>
+           <option value="eth">ETH - Ethereum</option>
+           <option value="ltc">LTC - LiteCoin</option>
+           <option value="bnb">BEP-20 - Binance Smart Chain</option>
+           <option value="usd">USD</option>
+           <option value="trx">Trc-20 - Tron</option>
+           <option value="sol">Solana</option>
+         
+           </datalist>
+
+        </div>
+        <div>
+          <label for="icurrencyto">To</label>
+            <input list="currencyto" id="icurrencyto" name="currencyto" placeholder="Choice Currency"/>
+
+           <datalist id="currencyto">
+            <option> Choice Crypto Currency</option>
+            <option value="sol">Solana</option>
+            <option value="trx">Trc-20 - Tron</option>
+            <option value="usd">USD</option>
+            <option value="bnb">BEP-20 - Binance Smart Chain</option>
+            <option value="ltc">LTC - LiteCoin</option>
+            <option value="eth">ETH - Ethereum</option>
+             <option value="btc">BTC - Bitcoin</option>
+
+        </div>
+        <div>
+          <input type="submit" value="Convert" id="btn" >
+        </div>
+        </div>
+        
+
+      </form>
+    </section>
+   
+</body>
+</html>
